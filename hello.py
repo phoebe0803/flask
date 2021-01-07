@@ -9,6 +9,8 @@ app = Flask(__name__)
 # in the end of the file "student.html" you can see redirct to the address"/addrec "
 @app.route('/')
 def new_student():
+    print("xxxx")
+    print(__name__)
     return render_template('student.html')
 
 #the function save data and the get data from database
@@ -72,4 +74,5 @@ def addrec():
 
 
 if __name__ == '__main__':
+    print()
     app.run(debug = True)
